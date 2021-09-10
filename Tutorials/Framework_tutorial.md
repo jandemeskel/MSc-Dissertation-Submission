@@ -3,7 +3,9 @@
 
 ## Preliminary
 
-Firstly, before attempting to use the framework, please ensure all packages and dependecies are correctly installed as instructed in the documentation - 'Link to documentation here'
+Firstly, before attempting to use the framework, please ensure all packages and dependecies are correctly installed as instructed in the documentation.
+<br>
+Source:  https://github.com/jandemeskel/MSc-Dissertation-Submission/blob/main/User%20Documentation.pdf 
 
 
 ## Functionality
@@ -31,10 +33,9 @@ The following information contains the name of the module, the main class contai
 <strong>Class</strong>: NMA
 
 | Function      | Description |                            
-| ----------- | ----------- |                           
-|||                            
-|||                            
-|||
+| ----------- | ----------- |                                                     
+| construct_FD()| Construct the formal description of a Muller automata via prompts from the terminal.|                            
+| FD_print()| Display well formatted print statement of the Muller automata formal description in the terminal|
 </div>
 
 <br>
@@ -46,9 +47,8 @@ The following information contains the name of the module, the main class contai
 
 | Function      | Description |                            
 | ----------- | ----------- |                           
-|||                            
-|||                            
-|||
+|construct_NGAs()|Costruct an NGA from the class inputs corresponding to NMA components|                            
+|NGA_print() |Display well formatted print statement of the NGA formal description in the terminal|                            
 
 
 </div>
@@ -61,9 +61,9 @@ The following information contains the name of the module, the main class contai
 
 | Function      | Description |                            
 | ----------- | ----------- |                           
-|||                            
-|||                            
-|||
+|convert_NGA(NGA)|Convert a singular NGA to an equivalent NBA|                            
+|construct_NBAs()|Convert a collection of NGAs to their equivalent NBAs|                            
+
 
 </div>
 <br>
@@ -76,17 +76,17 @@ The following information contains the name of the module, the main class contai
 
 | Function      | Description |                            
 | ----------- | ----------- |                           
-|||                            
-|||                            
-|||
+|Union_of_two(Automata1, Automata2)| The Union of two Finite or Stream automata|                            
+|Union_of()|The union of multiple finite or stream automata|                            
+|Union_print()|Display well formatted print statement of the Union formal description in the terminal|
 
 <strong>Class</strong>: Intersection([Automata1, Automata2])
 
 | Function      | Description |                            
 | ----------- | ----------- |                           
-|||                            
-|||                            
-|||
+|Intersect_two(Automata1, Automata2) | The Union of two Stream automata|                          
+|Intersection_of()|The union of multiple Stream automata|                            
+|Intersection_print()|Display well formatted print statement of the Intersection formal description in the terminal|
 
 
 </div>
@@ -131,8 +131,28 @@ T = [ [[q0], [a], [q1]], [[q1], [a], [q0]] ]
 AC = [q1]
 ```
 
+## Framework Application - Union 
 
-## Applications
+The regular operation for the union of stream automata was implemented using the models provided within the framework & algorithm Pseudocode provided by a standard textbook written by Esparzsa.
+
+
+<div align="center">
+    <img src ="UnionPseudo.png" width = 49% height = auto>
+</div>
+
+Below is the full source code produced to implement the above algorithm which is an explicity demonstration of the type of open-ended application possible using this framework.
+
+<div align="center">
+    <img src ="UnionSC1.png" width = 100% height = auto>
+</div>
+
+The addition of a well-formed print statement was included to provide a convinent method of inspecting the algorithms outputs within the terminal.
+
+<div align="center">
+    <img src ="UnionSC2.png" width = 49% height = auto>
+</div>
+
+## Suggested Application
 
 Similar to the implementation of the union and intersection, a user may desire to implement the complement of an NGA. The user could do so by utilizing the framework and any standard algorithm as such:
 
@@ -143,3 +163,36 @@ Similar to the implementation of the union and intersection, a user may desire t
 </div>
                                                     
                                                 
+
+
+# GUI development server
+
+Alternatively, one can use run the graphical user interface on a Flask development server and use the framework's features on face-value as a calculator for stream automata conversions and regular operations. To set up a development server complete the following steps.
+
+- Download the GUI package from the project GitHub page at : https://github.com/jandemeskel/MSc-Dissertation-Submission
+
+
+<div align="center">
+    <img src ="GitHubRepo.png" width = 49% height = auto>
+</div>
+
+- Ensure all external dependencies are installed as guided by the framework documentation.
+
+- Open & run the init.py folder 
+
+
+
+<div align="center">
+    <img src ="GUIDirectory.png" width = 49% height = auto>   
+  
+</div>
+
+- View the terminal response and open the development server URL provided within an up to date web browser.
+
+
+
+
+<div align="center">
+    <img src ="developmentURL.png" width = 49% height = auto>
+  
+</div>
