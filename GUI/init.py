@@ -9,8 +9,6 @@ from graphical import graph
 
 app = Flask(__name__)
 
-formatter = HtmlFormatter(style="emacs",full=True,cssclass="codehilite")
-css_string = formatter.get_style_defs()
 
 def flatten(arr):
     arr = [i for j in arr for i in j]
