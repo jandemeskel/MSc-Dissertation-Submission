@@ -336,13 +336,13 @@ $\alpha$ = {$\alpha$1, $\alpha$2, $\alpha$3, $\alpha$5, $\alpha$6}
 <div align="center">
   <strong>  Repeat this process of transition inspection until a full transition table is constructed </strong>
   <br>
-  <img src ="Transitions.png" width = 65% height = auto>      
+  <img src ="Transitions.PNG" width = 65% height = auto>      
 </div>  
 <br>
 <div align="center">
   <strong>  Accumulate all parts to construct the formal definition of the NGA </strong>
   <br>
-  <img src ="FD.png" width = 65% height = auto>      
+  <img src ="FD.PNG" width = 65% height = auto>      
 </div>   
        
 

@@ -1,4 +1,6 @@
-
+import markdown 
+import markdown.extensions.fenced_code
+from pygments.formatters import HtmlFormatter
 from GUI_parser import parser
 from flask import Flask, render_template, request
 from Algorithms.NGA_con import NGA_construct
@@ -9,6 +11,8 @@ from graphical import graph
 
 app = Flask(__name__)
 
+formatter = HtmlFormatter(style="emacs",full=True,cssclass="codehilite")
+css_string = formatter.get_style_defs()
 
 def flatten(arr):
     arr = [i for j in arr for i in j]
@@ -197,6 +201,30 @@ def Regops():
 
 
     return render_template('Regops.html')
+
+
+
+
+@app.route("/LTL", methods = ["GET", "POST"])
+def LTL():
+    
+    file = open('GUI\LTL_tutorial.md', 'r')
+
+    mdstring = markdown.markdown(file.read(), extensions=['fenced_code'])
+
+    md_css_string = "<style>" + css_string + "</style>"
+
+    md = md_css_string + mdstring
+    return md
+
+
+
+
+
+@app.route("/FWG", methods = ["GET", "POST"])
+def Framework_tutorial():
+    
+    return render_template('Framework_tutorial.md')
 
 if __name__ == '__main__':
     app.run(debug=True)
