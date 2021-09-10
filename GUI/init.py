@@ -203,28 +203,5 @@ def Regops():
     return render_template('Regops.html')
 
 
-
-
-@app.route("/LTL", methods = ["GET", "POST"])
-def LTL():
-    
-    file = open('GUI\LTL_tutorial.md', 'r')
-
-    mdstring = markdown.markdown(file.read(), extensions=['fenced_code'])
-
-    md_css_string = "<style>" + css_string + "</style>"
-
-    md = md_css_string + mdstring
-    return md
-
-
-
-
-
-@app.route("/FWG", methods = ["GET", "POST"])
-def Framework_tutorial():
-    
-    return render_template('Framework_tutorial.md')
-
 if __name__ == '__main__':
     app.run(debug=True)
