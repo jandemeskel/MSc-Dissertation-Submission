@@ -43,7 +43,9 @@ The grammar utilizes standard boolean operators and a set of temporal modal oper
 </div>
 <br>
 
-## LTL relation to Transition systems 
+## LTL relation to Transition systems
+
+An application of LTL is to predict the behaviour of an infinite strings within a stream automata, and ultimately provide a method for testing inputs on the models constructed by the framework. 
 
 The computation of an LTL formula over a transition system can be interpreted by the following statements:
 
@@ -94,9 +96,9 @@ The accumulation of these three statements is formally known as the **satisfacti
 
 ## LTL equivalence to Stream Automata
 
-As the focus of the framework, Automata which accept infinite traces are Stream automata, where an infinite sequence of states (infinite input) is accepted iff accepting states are visited infinitely often, this is known as the acceptance condition. Where stream automata only differ by the formulisation of this base acceptance condition.
+As the focus of the framework, Automata which accept infinite traces are Stream automata, where an infinite sequence of states (infinite input) is accepted iff accepting states are visited infintely often, this is known as the acceptance condition. Where stream automata only differ by the formulisation of this base acceptance condition.
 
-The satisfaction relation has shown that LTL formula represent a set of infinite trace which satisfy formula comprised of atomic propositions. Also, a given Stream automata will accept a set of infinite traces.
+The satisfaction relation has shown that LTL formula represent a set of infinite trace which satisfy formula comprosed of atomic propositions. Also, a given Stream automata will accept a set of infinite traces.
 
 ∴ A Stream automata exists which accepts exactly the infinite traces represented by the LTL formula
 
