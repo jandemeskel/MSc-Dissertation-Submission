@@ -1,6 +1,4 @@
-import markdown 
-import markdown.extensions.fenced_code
-from pygments.formatters import HtmlFormatter
+
 from GUI_parser import parser
 from flask import Flask, render_template, request
 from Algorithms.NGA_con import NGA_construct
