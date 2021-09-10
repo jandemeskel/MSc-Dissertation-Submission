@@ -13,7 +13,7 @@ Source:  https://github.com/jandemeskel/MSc-Dissertation-Submission/blob/main/Us
 To access the modules, ensure the framework is correctly imported by using the following test:
 
 <div align="center">
-    <img src ="PathTest.png" width = 50% height = auto>
+    <img src ="PathTest.PNG" width = 50% height = auto>
 </div>
 
 ***If the test fails:***
@@ -113,7 +113,7 @@ etc...
 For instance, the following automata and the corresponding data struct used in the framework to model it.
 
 <div align="center">
-    <img src ="ExampleDataStruct.png" width = 35% height = auto>
+    <img src ="ExampleDataStruct.PNG" width = 35% height = auto>
 </div>
 
 
@@ -137,19 +137,19 @@ The regular operation for the union of stream automata was implemented using the
 
 
 <div align="center">
-    <img src ="UnionPseudo.png" width = 49% height = auto>
+    <img src ="UnionPseudo.PNG" width = 49% height = auto>
 </div>
 
 Below is the full source code produced to implement the above algorithm which is an explicity demonstration of the type of open-ended application possible using this framework.
 
 <div align="center">
-    <img src ="UnionSC1.png" width = 100% height = auto>
+    <img src ="UnionSC1.PNG" width = 100% height = auto>
 </div>
 
 The addition of a well-formed print statement was included to provide a convinent method of inspecting the algorithms outputs within the terminal.
 
 <div align="center">
-    <img src ="UnionSC2.png" width = 49% height = auto>
+    <img src ="UnionSC2.PNG" width = 49% height = auto>
 </div>
 
 ## Suggested Application
@@ -158,8 +158,8 @@ Similar to the implementation of the union and intersection, a user may desire t
 
 
 <div align="center">
-    <img src ="ExampleUse.png" width = 49% height = auto>
-    <img src ="Complement.png" width = 45% height = auto>
+    <img src ="ExampleUse.PNG" width = 49% height = auto>
+    <img src ="Complement.PNG" width = 45% height = auto>
 </div>
                                                     
                                                 
@@ -173,7 +173,7 @@ Alternatively, one can use run the graphical user interface on a Flask developme
 
 
 <div align="center">
-    <img src ="GitHubRepo.png" width = 49% height = auto>
+    <img src ="GitHubRepo.PNG" width = 49% height = auto>
 </div>
 
 - Ensure all external dependencies are installed as guided by the framework documentation.
@@ -183,7 +183,7 @@ Alternatively, one can use run the graphical user interface on a Flask developme
 
 
 <div align="center">
-    <img src ="GUIDirectory.png" width = 49% height = auto>   
+    <img src ="GUIDirectory.PNG" width = 49% height = auto>   
   
 </div>
 
@@ -193,6 +193,6 @@ Alternatively, one can use run the graphical user interface on a Flask developme
 
 
 <div align="center">
-    <img src ="developmentURL.png" width = 49% height = auto>
+    <img src ="developmentURL.PNG" width = 49% height = auto>
   
 </div>
